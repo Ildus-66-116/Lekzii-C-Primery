@@ -135,7 +135,7 @@
 
 //  Лекция 4
 
-Console.Clear();
+// Console.Clear();
 // string[,] table = new string[2, 5];
 // string.Empty - инциализация пустая строка - ставит 0 по умолчанию
 // table[0, 0], table[0, 1], table[0, 2], table[0, 4]
@@ -150,26 +150,26 @@ Console.Clear();
 //             Console.WriteLine($"-{table[rows, colums]}-");
 //         }
 //     }
-void PrintArray(int[,] matrix)
-{
-for(int i = 0; i < matrix.GetLength(0); i++)
-    {
-        for(int j = 0; j < matrix.GetLength(1); j++)
-        {
-            Console.Write($"{matrix[i, j]} ");
-        }
-    Console.WriteLine();
-    }
-}
+// void PrintArray(int[,] matrix)
+// {
+// for(int i = 0; i < matrix.GetLength(0); i++)
+//     {
+//         for(int j = 0; j < matrix.GetLength(1); j++)
+//         {
+//             Console.Write($"{matrix[i, j]} ");
+//         }
+//     Console.WriteLine();
+//     }
+// }
 
-void FillArray(int[,] matrix)
-{
-    for(int i = 0; i < matrix.GetLength(0); i++)
-    {
-        for(int j = 0; j < matrix.GetLength(1); j++) matrix[i, j] = new Random().Next(1, 10);
-    }
-    Console.WriteLine();
-}
+// void FillArray(int[,] matrix)
+// {
+//     for(int i = 0; i < matrix.GetLength(0); i++)
+//     {
+//         for(int j = 0; j < matrix.GetLength(1); j++) matrix[i, j] = new Random().Next(1, 10);
+//     }
+//     Console.WriteLine();
+// }
 
 // int[,] matrix = new int[3,4];
 // PrintArray(matrix);
@@ -178,19 +178,19 @@ void FillArray(int[,] matrix)
 
 // Закраска картинки
 
-void PrintImage(int[,] image)
-{
-for(int i = 0; i < image.GetLength(0); i++)
-    {
-        for(int j = 0; j < image.GetLength(1); j++)
-        {
-            // 
-            if(image[i, j] == 0) Console.Write($" ");
-            else Console.Write($"+");
-        }
-    Console.WriteLine();
-    }
-}
+// void PrintImage(int[,] image)
+// {
+// for(int i = 0; i < image.GetLength(0); i++)
+//     {
+//         for(int j = 0; j < image.GetLength(1); j++)
+//         {
+//             // 
+//             if(image[i, j] == 0) Console.Write($" ");
+//             else Console.Write($"+");
+//         }
+//     Console.WriteLine();
+//     }
+// }
 
 // void FillImage(int row, int col)
 // {
@@ -211,11 +211,11 @@ for(int i = 0; i < image.GetLength(0); i++)
 // };
 // PrintImage(pic);
 
-double Factorial (double n)
-{
-    if(n == 1) return 1;
-    else return n * Factorial(n - 1);
-}
+// double Factorial (double n)
+// {
+//     if(n == 1) return 1;
+//     else return n * Factorial(n - 1);
+// }
 
 // for(int i = 1; i < 40; i++)
 // Console.WriteLine($"{i}! = {Factorial(i)}");
@@ -225,9 +225,13 @@ double Factorial (double n)
 // f(2) = 1
 // f(n) = f(n-1) + f(n-2)
 
-double Fibanachi(double n)
-{
-    if(n == 1 || n == 2) return 1;
-    else return Fibanachi(n-1) + Fibanachi(n-2);
-}
+// double Fibanachi(double n)
+// {
+//     if(n == 1 || n == 2) return 1;
+//     else return Fibanachi(n-1) + Fibanachi(n-2);
+// }
 // for(int i = 1; i < 50; i++) Console.WriteLine($"{i} = {Fibanachi(i)}");
+
+
+// Лекция 5 
+
